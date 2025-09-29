@@ -1,0 +1,12 @@
+[27-Jun-2025 08:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Posts_Controller' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php on line 17
+[16-Jul-2025 03:10:37 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Posts_Controller' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php on line 17
+[16-Jul-2025 04:49:23 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Posts_Controller' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php on line 17

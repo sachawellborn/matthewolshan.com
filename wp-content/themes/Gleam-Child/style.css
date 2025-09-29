@@ -1,0 +1,53 @@
+/*
+Theme Name:     Gleam Child
+Theme URI:      http://www.matthewolshan.com/
+Description:    Child theme for the Gleam theme
+Author:         Vlad Patrascu	
+Author URI:     
+Template:       Gleam                             
+Version:        0.1.0
+*/
+
+@import url("../Gleam/style.css");
+
+.foursixeight { margin: 0px 0px 15px 84px;}
+.et_embedded_videos { display: none !important; }
+html#ie7 .menu_slide { display: none !important; }
+
+.wp-caption {
+width: inherit !important;
+}
+
+#main_content
+{
+background:#fff;
+}
+.jspContainer:after , .jspContainer:before
+{
+background:none;
+}
+
+
+#main_menu a:hover {
+background: #7c638f;}
+
+#secondary_menu a:hover
+{
+background:#7c638f;
+}
+#close_button
+{
+background-color:#7c638f;
+}
+
+a {
+color: #7c638f;
+}
+
+#pattern_overlay {background: none !important;}
+
+/* Additional changes */
+#logo_area h1 a { color: #ffffff!important; }
+
+.news-column-item { margin: 0 0 15px 0; }
+.news-column-item h3 { margin: 0; }

@@ -1,0 +1,12 @@
+[27-Jun-2025 08:49:28 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home1/mdolshan/matthewolshan.com/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[16-Jul-2025 03:10:44 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home1/mdolshan/matthewolshan.com/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[16-Jul-2025 04:49:30 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home1/mdolshan/matthewolshan.com/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/IXR/class-IXR-clientmulticall.php on line 8

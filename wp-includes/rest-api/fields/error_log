@@ -1,0 +1,44 @@
+[12-Apr-2025 03:05:53 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[12-Apr-2025 17:13:58 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17
+[14-Apr-2025 13:13:28 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[27-Apr-2025 13:48:14 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[12-May-2025 20:16:46 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[30-Jun-2025 17:40:28 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[01-Jul-2025 22:37:46 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17
+[08-Jul-2025 21:06:04 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[27-Jul-2025 11:54:10 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[06-Aug-2025 14:57:28 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[22-Aug-2025 03:36:17 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home1/mdolshan/matthewolshan.com/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17

@@ -1,0 +1,42 @@
+# ----------------------------------------
+# VS Code and System Files (IDE/OS)
+# ----------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ----------------------------------------
+# DDEV and Local Environment Exclusions
+# ----------------------------------------
+
+# DDEV Local Configuration and State
+.ddev/
+
+# Local configuration files (adjust if your project uses this)
+wp-config-local.php
+
+# Generated Log and Report Files
+error_log           # Generic PHP/Server error log
+modlogan/           # Old Log Analyzer Reports
+webalizer/          # Old Log Analyzer Reports
+
+# WP-CLI Cache
+.wp-cli/
+
+# ----------------------------------------
+# WordPress Caches, Backups, and Temporary Data
+# ----------------------------------------
+
+# Database Files and Backups
+*.sql
+*.zip
+*.tar.gz
+
+# Standard WordPress Caches
+/wp-content/cache/
+/wp-content/upgrade/
+
+# Common Plugin-specific exclusions
+/wp-content/ai1wm-backups/  # All In One WP Migration backups
+/wp-content/wflogs/         # Wordfence logs

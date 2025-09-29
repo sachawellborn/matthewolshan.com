@@ -1,0 +1,1 @@
+a:6:{s:4:"date";s:19:"2015.02.15 12:27:20";s:19:"/?author=1&paged=45";i:1;s:13:"/?page_id=787";i:4;s:19:"/?author=1&paged=44";i:1;s:1:"/";i:10;s:30:"/wp-includes/class-wp-menu.php";i:12;}
