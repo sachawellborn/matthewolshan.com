@@ -6,9 +6,6 @@ Thumbs.db
 .idea/
 .vscode/
 
-
-.htaccess
-
 # ----------------------------------------
 # DDEV and Local Environment Exclusions
 # ----------------------------------------
