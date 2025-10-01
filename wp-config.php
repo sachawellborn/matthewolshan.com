@@ -15,8 +15,8 @@
  */
 
 // ** ADD THESE LINES - Replace with your actual domain ** //
-define('WP_HOME','https://iur.cjf.mybluehost.me');
-define('WP_SITEURL','https://iur.cjf.mybluehost.me');
+// define('WP_HOME','https://iur.cjf.mybluehost.me');
+// define('WP_SITEURL','https://iur.cjf.mybluehost.me');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
