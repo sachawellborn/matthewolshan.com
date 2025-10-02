@@ -158,9 +158,11 @@ if ( ! function_exists( 'et_postinfo_meta' ) ){
 }
 
 add_action('et_head_meta','et_add_google_fonts');
-function et_add_google_fonts(){
-	echo "<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />";
-	echo "<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css' />";
+function et_add_google_fonts() {
+	if ( et_core_use_google_fonts() ) {
+		echo "<link href='https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css' />";
+		echo "<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css' />";
+	}
 }
 
 add_filter('body_class', 'et_add_fullscreen_class');
@@ -222,3 +224,20 @@ function et_core_portability_link() {
 	return '';
 }
 endif;
+
+
+function et_theme_maybe_load_core() {
+	if ( et_core_exists_in_active_plugins() ) {
+		return;
+	}
+
+	if ( defined( 'ET_CORE' ) ) {
+		return;
+	}
+
+	require_once get_template_directory() . '/core/init.php';
+
+	et_core_setup( get_template_directory_uri() );
+}
+add_action( 'after_setup_theme', 'et_theme_maybe_load_core' );
+
