@@ -40,3 +40,4 @@ webalizer/          # Old Log Analyzer Reports
 # Common Plugin-specific exclusions
 /wp-content/ai1wm-backups/  # All In One WP Migration backups
 /wp-content/wflogs/         # Wordfence logs
+wp-content/cache/*

@@ -38,6 +38,12 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+// below for ddev db connection
+// define('DB_NAME', 'db');
+// define('DB_USER', 'db');
+// define('DB_PASSWORD', 'db');
+// define('DB_HOST', 'db');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
