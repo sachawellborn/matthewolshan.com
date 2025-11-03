@@ -2,9 +2,9 @@
 Theme Name:     Gleam Child
 Theme URI:      http://www.matthewolshan.com/
 Description:    Child theme for the Gleam theme
-Author:         Vlad Patrascu	
-Author URI:     
-Template:       Gleam                             
+Author:         Vlad Patrascu
+Author URI:
+Template:       Gleam
 Version:        0.1.0
 */
 
@@ -51,3 +51,21 @@ color: #7c638f;
 
 .news-column-item { margin: 0 0 15px 0; }
 .news-column-item h3 { margin: 0; }
+
+
+/* --- BEGIN MENU FUNCTIONALITY FIX --- */
+
+/* FIX 1: This is the aggressive rule that must remain to ensure the menu is visible after AJAX load. */
+#main_content.home_content #main_header:hover #main_menu {
+    display: block !important;
+}
+
+/* FIX 2: This ensures the menu is hidden when not hovered and clears any lingering transition conflicts. */
+#main_menu {
+    display: none;
+    transition: none !important;
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+}
+/* --- END MENU FUNCTIONALITY FIX --- */

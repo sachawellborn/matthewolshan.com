@@ -68,57 +68,57 @@ Template Name: Contact Page
 
 <?php get_header(); ?>
 
-<?php get_template_part('includes/breadcrumbs','single'); ?>
-<?php get_template_part('loop','page'); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div id="et-contact" class="clearfix">
-	<div id="et-contact-message"><?php echo($et_error_message); ?> </div>
+    <div id="post-<?php the_ID(); ?>" <?php post_class('et_page_content'); ?>>
 
-	<?php if ( $et_contact_error ) { ?>
-		<form action="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" method="post" id="et_contact_form">
-			<div id="et_contact_left">
-				<p class="clearfix">
-					<label for="et_contact_name" class="et_contact_form_label"><?php esc_html_e('Name','Gleam'); ?></label>
-					<input type="text" name="et_contact_name" value="<?php if ( isset($_POST['et_contact_name']) ) echo esc_attr($_POST['et_contact_name']); else esc_attr_e('Name','Gleam'); ?>" id="et_contact_name" class="input" />
-				</p>
+        <a href="<?php echo esc_url( home_url() ); ?>" id="close_button" title="<?php esc_attr_e('Close Content','Gleam'); ?>"></a>
 
-				<p class="clearfix">
-					<label for="et_contact_email" class="et_contact_form_label"><?php esc_html_e('Email Address','Gleam'); ?></label>
-					<input type="text" name="et_contact_email" value="<?php if ( isset($_POST['et_contact_email']) ) echo esc_attr($_POST['et_contact_email']); else esc_attr_e('Email Address','Gleam'); ?>" id="et_contact_email" class="input" />
-				</p>
+        <?php the_content(); ?>
 
-				<p class="clearfix">
-					<label for="et_contact_subject" class="et_contact_form_label"><?php esc_html_e('Subject','Gleam'); ?></label>
-					<input type="text" name="et_contact_subject" value="<?php if ( isset($_POST['et_contact_subject']) ) echo esc_attr($_POST['et_contact_subject']); else esc_attr_e('Subject','Gleam'); ?>" id="et_contact_subject" class="input" />
-				</p>
-			</div> <!-- #et_contact_left -->
+        <div id="et-contact" class="clearfix">
+            <div id="et-contact-message"><?php echo($et_error_message); ?> </div>
 
-			<div id="et_contact_right">
-				<p class="clearfix">
-					<?php
-						esc_html_e('Captcha: ','Gleam');
-						echo '<br/>';
-						echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
-					?>
-					<input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
-				</p>
-			</div> <!-- #et_contact_right -->
+            <?php if ( $et_contact_error ) { ?>
+                <form action="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" method="post" id="et_contact_form">
+                    <div id="et_contact_left">
+                        <p class="clearfix">
+                            <label for="et_contact_name" class="et_contact_form_label"><?php esc_html_e('Name','Gleam'); ?></label>
+                            <input type="text" name="et_contact_name" value="<?php if ( isset($_POST['et_contact_name']) ) echo esc_attr($_POST['et_contact_name']); else esc_attr_e('Name','Gleam'); ?>" id="et_contact_name" class="input" />
+                        </p>
 
-			<div class="clear"></div>
+                        <p class="clearfix">
+                            <label for="et_contact_email" class="et_contact_form_label"><?php esc_html_e('Email Address','Gleam'); ?></label>
+                            <input type="text" name="et_contact_email" value="<?php if ( isset($_POST['et_contact_email']) ) echo esc_attr($_POST['et_contact_email']); else esc_attr_e('Email Address','Gleam'); ?>" id="et_contact_email" class="input" />
+                        </p>
 
-			<p class="clearfix">
-				<label for="et_contact_message" class="et_contact_form_label"><?php esc_html_e('Message','Gleam'); ?></label>
-				<textarea class="input" id="et_contact_message" name="et_contact_message"><?php if ( isset($_POST['et_contact_message']) ) echo esc_textarea($_POST['et_contact_message']); else echo esc_textarea( __('Message','Gleam') ); ?></textarea>
-			</p>
+                        <p class="clearfix">
+                            <label for="et_contact_subject" class="et_contact_form_label"><?php esc_html_e('Subject','Gleam'); ?></label>
+                            <input type="text" name="et_contact_subject" value="<?php if ( isset($_POST['et_contact_subject']) ) echo esc_attr($_POST['et_contact_subject']); else esc_attr_e('Subject','Gleam'); ?>" id="et_contact_subject" class="input" />
+                        </p>
+                    </div> <div id="et_contact_right">
+                        <p class="clearfix">
+                            <?php
+                                esc_html_e('Captcha: ','Gleam');
+                                echo '<br/>';
+                                echo esc_attr($et_first_digit) . ' + ' . esc_attr($et_second_digit) . ' = ';
+                            ?>
+                            <input type="text" name="et_contact_captcha" value="<?php if ( isset($_POST['et_contact_captcha']) ) echo esc_attr($_POST['et_contact_captcha']); ?>" id="et_contact_captcha" class="input" size="2" />
+                        </p>
+                    </div> <div class="clear"></div>
 
-			<input type="hidden" name="et_contactform_submit" value="et_contact_proccess" />
+                    <p class="clearfix">
+                        <label for="et_contact_message" class="et_contact_form_label"><?php esc_html_e('Message','Gleam'); ?></label>
+                        <textarea class="input" id="et_contact_message" name="et_contact_message"><?php if ( isset($_POST['et_contact_message']) ) echo esc_textarea($_POST['et_contact_message']); else echo esc_textarea( __('Message','Gleam') ); ?></textarea>
+                    </p>
 
-			<input type="reset" id="et_contact_reset" value="<?php esc_attr_e('Reset','Gleam'); ?>" />
-			<input class="et_contact_submit" type="submit" value="<?php esc_attr_e('Submit','Gleam'); ?>" id="et_contact_submit" />
+                    <input type="hidden" name="et_contactform_submit" value="et_contact_proccess" />
 
-			<?php wp_nonce_field( 'et-contact-form-submit', '_wpnonce-et-contact-form-submitted' ); ?>
-		</form>
-	<?php } ?>
-</div> <!-- end #et-contact -->
+                    <input type="reset" id="et_contact_reset" value="<?php esc_attr_e('Reset','Gleam'); ?>" />
+                    <input class="et_contact_submit" type="submit" value="<?php esc_attr_e('Submit','Gleam'); ?>" id="et_contact_submit" />
 
+                    <?php wp_nonce_field( 'et-contact-form-submit', '_wpnonce-et-contact-form-submitted' ); ?>
+                </form>
+            <?php } ?>
+        </div> </div> <?php endwhile; endif; ?>
 <?php get_footer(); ?>
