@@ -75,7 +75,6 @@ Template Name: Contact Page
         <a href="<?php echo esc_url( home_url() ); ?>" id="close_button" title="<?php esc_attr_e('Close Content','Gleam'); ?>"></a>
 
         <?php the_content(); ?>
-
         <div id="et-contact" class="clearfix">
             <div id="et-contact-message"><?php echo($et_error_message); ?> </div>
 

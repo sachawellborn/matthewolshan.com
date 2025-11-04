@@ -26,23 +26,23 @@ define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settin
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-// define('DB_NAME', 'iurcjfmy_WPPXN');
-// /** Database username */
-// define('DB_USER', 'iurcjfmy_WPPXN');
-// /** Database password */
-// define('DB_PASSWORD', 'hP{[Kx?n]6jRO/@Z>');
-// /** Database hostname */
-// define('DB_HOST', 'localhost');
-// /** Database charset to use in creating database tables. */
-// define( 'DB_CHARSET', 'utf8' );
-// /** The database collate type. Don't change this if in doubt. */
-// define( 'DB_COLLATE', '' );
+define('DB_NAME', 'iurcjfmy_WPPXN');
+/** Database username */
+define('DB_USER', 'iurcjfmy_WPPXN');
+/** Database password */
+define('DB_PASSWORD', 'hP{[Kx?n]6jRO/@Z>');
+/** Database hostname */
+define('DB_HOST', 'localhost');
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
 // below for ddev db connection
-define('DB_NAME', 'db');
-define('DB_USER', 'db');
-define('DB_PASSWORD', 'db');
-define('DB_HOST', 'db');
+// define('DB_NAME', 'db');
+// define('DB_USER', 'db');
+// define('DB_PASSWORD', 'db');
+// define('DB_HOST', 'db');
 
 /**#@+
  * Authentication Unique Keys and Salts.
